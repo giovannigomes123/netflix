@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <!-- owl css(carrossel) -->
+  <link rel="stylesheet" href="./owl/owl.carousel.min.css">
+  <link rel="stylesheet" href="./owl/owl.theme.default.min.css">
+  <!-- Responsividade -->
+  <link rel="stylesheet" type="text/css" href="responsive.css">
+  <title>TIflix</title>
+</head>
+<body>
+    <header>    <!--cabeçalho//--> 
+      <div class=conteiner>  <!--conteiner--> 
+        <h2 class="logo">TI-flix</h2>
+        <nav class="menu">  <!--menu-->
+          <a href="netflix-clone.html">Início</a>
+          <a href="netflix-clone.html" onclick="inovar()">Cursos</a>
+          <a href="netflix-clone.html" onclick="inovar()">Bootcamps</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+    	<div class="filme-principal">
+    		<div class="container">
+    			<h3 class="titulo">Lógica de Programação</h3>
+    			<p class="descricao">Aprenda tudo o que você precisa saber para programar em qualquer linguagem</p>
+    			<div class="botoes">
+    				<button class="botao" onclick="principal()"> <i class="fas fa-play"></i> ASSISTIR AGORA</button>
+    				<button class="botao" onclick="descrever()"> <i class="fas fa-info-circle"></i> MAIS INFORMAÇÕES</button>
+    			</div>
+    		</div>
+    	</div>
+
+    </main>
+
+    <div class="apresentar">
+    	<h1 class="novoTitulo">PRINCIPAIS CURSOS</h1>
+    </div>
+
+    <!--Código do carrossel de imagens-->
+    <div class="carrosel-filmes">
+
+    	<div class="owl-carousel owl-theme">
+    		<div class="item" onclick="cursos()"> <img class="box-filme" src="./imagens/C++.jpg"> <h3 class="legenda">Curso de C++</h3> </div>
+    		<div class="item" onclick="cursos()"> <img class="box-filme" src="./imagens/java.jpg"> <h3 class="legenda">Curso de Java</h3> </div>
+    		<div class="item" onclick="cursos()"> <img class="box-filme" src="./imagens/python.jpg"> <h3 class="legenda">Curso de Python</h3> </div>
+    		<div class="item" onclick="cursos()"> <img class="box-filme" src="./imagens/Angular.jpg" > <h3 class="legenda">Curso de Angular</h3> </div>
+    		<div class="item" onclick="cursos()"> <img class="box-filme" src="./imagens/PHP.png" > <h3 class="legenda">Curso de PHP</h3> </div>
+    		<div class="item" onclick="cursos()"> <img class="box-filme" src="./imagens/Cobol.jpg" > <h3 class="legenda">Curso de Cobol</h3> </div>
+    		<div class="item" onclick="cursos()"> <img class="box-filme" src="./imagens/html.png" > <h3 class="legenda">Curso de Programação WEB</h3> </div>
+    		<div class="item" onclick="cursos()"> <img class="box-filme" src="./imagens/IA.jpg" > <h3 class="legenda">Curso de Inteligência Artificial</h3> </div>
+    		<div class="item" onclick="cursos()"> <img class="box-filme" src="./imagens/ruby.png" > <h3 class="legenda">Curso de Ruby</h3> </div>
+    		<div class="item" onclick="cursos()"> <img class="box-filme" src="./imagens/kotlin.jpg" > <h3 class="legenda">Curso de Kotlin</h3> </div>
+    
+        </div>
+    </div>
+    <!--Descrição do site-->
+
+    <div class="descreverSite">
+    	<hr width: 50%;
+		    height: 20px;
+			background-color: red;
+			margin-right: auto;
+			margin-left: auto;
+			margin-top: 30px;
+			margin-bottom: 5px;
+			border-width: 2px;>
+    	<h2 class="cursos">APRENDA CONOSCO A PROGRAMAR!</h2>
+    	<P class="Descrever"> Somos uma escola de programação feita especialmente para ajudar você a entrar de cabeça no mercado digital!
+    	Nós ensinamos a você as melhores e mais requisitadas linguagens de programação do mercado 
+        Aprenda agora e entre de cabeça no mercado de Tecnologia da Informação!</P>
+
+    </div>
+
+    <footer>
+    	<hr width: 50%;
+		    height: 20px;
+			background-color: red;
+			margin-right: auto;
+			margin-left: auto;
+			margin-top: 30px;
+			margin-bottom: 5px;
+			border-width: 2px;>
+		<h3 class="footerF">NOSSOS LINKS DE CONTATO</h3>
+		<ul>
+			<li><a class="links" href="">github</a></li>
+			<li><a class="links" href="https://www.linkedin.com/in/giovanni-menezes-gomes-aa26081b9/">linkedin</a></li>
+			<li class="links">Whatsapp: (81)98301-7512</li>
+			<li class="links">Email: giovannigomes2009@gmail.com</li>
+		</ul>
+    </footer>
+
+    <script type="text/javascript" src="https://kit.fontawesome.com/1cd73da621.js" crossorigin="anonymous"></script>
+    <script src="./owl/jquery.min.js"></script>
+    <script type="text/javascript" src="./owl/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="setup.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+:root{ /* criar variáveis no css*/
+	--vermelho: #E50914;
+	--preto: #151515;
+	--azul: #41658a;
+	--cinza:#808080;
+	/* torna mais fácil de colocar as cores no arquivo*/
+}
+
+body{
+	background: var(--preto);
+	font-family: times;
+	color:white;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;	/*
+		A propriedade CSS box-sizing é utilizada para alterar 
+		a propriedade padrão da box model, usada para calcular
+		larguras (widths) e alturas (heights) dos elementos. 
+		É possível usar essa propriedade para emular o 
+		comportamento dos navegadores (browsers) 
+		que não suportam corretamente a especificação da 
+		propriedade CSS box model.
+
+	   */
+}
+
+header .conteiner{
+	display: flex;	/*ajuda a alinhar os elementos*/
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+header .logo{
+	color: var(--vermelho);
+	font-family: sans-serif;
+	font-size: 35px;
+	margin-left: 5px;
+}
+
+header nav a{
+	text-decoration: none;
+	color:#AAA;
+	margin-right: 10px;
+}
+
+header nav a:hover{		/*muda de cor quando o mouse 
+	passar por cima*/
+	color:#fff;
+}
+
+/*filme principal*/
+
+.filme-principal{
+	font-size: 16px;
+	background:linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50) 100%), url(Lprog.jpg);
+	/*serve para dar um contraste maior na "legenda", criando uma camada.*/
+	height: 400px;
+	background-size: cover; /*tamanho da imagem no background;
+	vai ficar do tamanho da "caixa"*/	/**/
+	display: flex;
+	flex-direction: column;
+	justify-content: center; 
+	align-items: flex-start; /*Conteúdo começa na esquerda*/
+}
+.filme-principal .descricao{
+	margin-top: 10px;
+	margin-bottom: 90px;
+}
+
+.filme-principal .titulo{
+	margin-top: 15%;
+	font-size: 40px;
+	font-family: serif;
+}
+
+.botao{
+	background-color: rgba(0,0,0, 50%);
+	border: none;
+	color:white;
+	padding: 15px 30px;
+	margin-right: 15px;
+	font-size: 12px;
+	cursor: pointer; /*Cursor muda quando passa pelo botão*/
+	transition: .3s ease all; /*"animação" ao mouse passar pelo botão*/
+}
+.botao:hover{
+	background-color: white;
+	color: black;
+}
+
+.botao i{
+	margin-right: 5px;
+}
+
+.container{
+	margin-left: 20px;
+}
+
+.filme-principal .container{
+	width: 70%;
+}
+
+.box-filme{
+	height: 100%;
+	width: 100%;
+	display: block;
+}
+
+.carrosel-filmes{
+	margin-top: 10px;
+}
+
+.legenda{
+	font-family: "Arial";
+	text-align: center;
+}
+
+.novoTitulo{
+	font-family: "Arial";
+	text-align: center;
+	text-decoration: underline;
+	color:var(--cinza);
+}
+
+.descreverSite{
+	font-family: "Arial";
+	margin-top: 18px;
+	margin-bottom: 100px;
+	margin-right: 80px;
+	margin-left: 80px;
+	text-align: justify;
+}
+.cursos{
+	text-align: center;
+	margin-top: 30px;
+}
+.centralizar{
+	align-items: center;
+}
+
+.links{
+	text-decoration: none;
+	font-family: "Arial";
+	color:white;
+}
+
+footer{
+	margin-right:80px;
+	margin-left: 80px;
+	margin-bottom: 40px;
+}
+
+.footerF{
+	margin-top: 30px;
+	text-decoration: underline;
+	text-align: center;
+}
+
